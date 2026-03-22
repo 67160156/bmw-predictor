@@ -92,8 +92,8 @@ param_grid = {
 
 | Metric | Value |
 |--------|-------|
-| R² Score | ~0.88 |
-| MAE | ~748 units |
+| R² Score | ~0.96 |
+| MAE | ~453 units |
 | RMSE | ~950 units |
 | Cross-validation | 5-Fold K-Fold |
 
@@ -132,7 +132,7 @@ streamlit run app.py
 ## 🌐 Deployed App
 
 > 🔗 **[BMW Sales Intelligence Dashboard](#)**  
-> *(แทนที่ด้วย URL จริงหลัง deploy บน Streamlit Cloud)*
+> *https://bmw-predictor-qlwkxnp9uvehtqhpxso7qr.streamlit.app/*
 
 ---
 
@@ -159,22 +159,13 @@ joblib>=1.3.2
 plotly>=5.18.0
 ```
 
----
-
-## ⚠️ Disclaimer
-
-ผลการพยากรณ์นี้สร้างจากโมเดล Machine Learning เพื่อวัตถุประสงค์ทางการศึกษาเท่านั้น  
-ไม่ใช่ยอดขายจริงของ BMW Group AG และไม่ควรนำไปใช้ตัดสินใจเชิงธุรกิจจริง
-
----
 
 ## 👤 ผู้พัฒนา
 
 | | |
 |--|--|
-| **ชื่อ** | *(ใส่ชื่อของคุณ)* |
-| **รหัสนิสิต** | *(ใส่รหัสนิสิต)* |
-| **วิชา** | ML Deployment Project |
+| **ชื่อ** | *Tamonwan Srisawat* |
+| **รหัสนิสิต** | *67160156* |
 
 ---
 
