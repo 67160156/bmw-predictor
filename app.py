@@ -349,7 +349,34 @@ FUEL_TYPES     = sorted(meta["fuel_types"])
 TRANSMISSIONS  = sorted(meta["transmissions"])
 FEATURE_CAT    = meta.get("feature_cols_cat", ["Model","Region","Fuel_Type","Transmission"])
 FEATURE_NUM    = meta.get("feature_cols_num", ["Year","Engine_Size_L","Mileage_KM","Price_USD"])
-FUEL_PER_MODEL   = meta.get("fuel_per_model",   {m: FUEL_TYPES for m in BMW_MODELS})
+# Fuel mapping ตาม BMW จริง — fallback ถ้า metadata ไม่มี fuel_per_model
+_FUEL_MAP_DEFAULT = {
+    "1 Series": ["Diesel", "Petrol"],
+    "2 Series": ["Diesel", "Hybrid", "Petrol"],
+    "3 Series": ["Diesel", "Hybrid", "Petrol"],
+    "4 Series": ["Diesel", "Hybrid", "Petrol"],
+    "5 Series": ["Diesel", "Hybrid", "Petrol"],
+    "6 Series": ["Diesel", "Petrol"],
+    "7 Series": ["Diesel", "Hybrid", "Petrol"],
+    "X1":       ["Diesel", "Electric", "Petrol"],
+    "X2":       ["Diesel", "Electric", "Petrol"],
+    "X3":       ["Diesel", "Hybrid", "Petrol"],
+    "X4":       ["Diesel", "Hybrid", "Petrol"],
+    "X5":       ["Diesel", "Hybrid", "Petrol"],
+    "X6":       ["Diesel", "Hybrid", "Petrol"],
+    "X7":       ["Diesel", "Hybrid", "Petrol"],
+    "M2":       ["Petrol"],
+    "M3":       ["Petrol"],
+    "M4":       ["Petrol"],
+    "M5":       ["Hybrid", "Petrol"],
+    "i3":       ["Electric"],
+    "i4":       ["Electric"],
+    "i5":       ["Electric"],
+    "i7":       ["Electric", "Hybrid"],
+    "i8":       ["Hybrid"],
+}
+# ใช้ mapping จริงของ BMW เสมอ
+FUEL_PER_MODEL = {m: _FUEL_MAP_DEFAULT.get(m, FUEL_TYPES) for m in BMW_MODELS}
 ENGINE_PER_MODEL = meta.get("engine_per_model", {m: [1.5, 5.0, 2.0] for m in BMW_MODELS})
 LE_MAP         = {"Model": le_model, "Region": le_region,
                   "Fuel_Type": le_fuel, "Transmission": le_trans}
