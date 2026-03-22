@@ -286,6 +286,26 @@ hr { border-color: #e5e5e5 !important; }
     border-radius: 8px; padding: 0.6rem 1rem;
     font-size: 0.78rem; color: #1d4ed8; font-weight: 500;
 }
+
+/* ── Validation error ── */
+.validation-error {
+    background: #fee2e2; border: 1px solid #fca5a5;
+    border-radius: 8px; padding: 0.8rem 1rem;
+    font-size: 0.8rem; color: #b91c1c; font-weight: 500;
+    margin-bottom: 1rem;
+}
+.validation-error ul { margin: 0.3rem 0 0 1rem; padding: 0; }
+.validation-error li { margin-bottom: 0.2rem; }
+
+/* ── Disclaimer ── */
+.disclaimer-box {
+    background: #f8f9fa; border: 1px solid #e5e5e5;
+    border-left: 3px solid #aaa;
+    border-radius: 0 8px 8px 0; padding: 0.8rem 1rem;
+    font-size: 0.72rem; color: #888; line-height: 1.6;
+    margin-top: 1.5rem;
+}
+.disclaimer-box b { color: #666; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -336,6 +356,13 @@ LE_MAP         = {"Model": le_model, "Region": le_region,
 DEFAULT_PRICE   = 75000
 DEFAULT_MILEAGE = 100000
 
+# ── Validation rules ──
+VALIDATION_RULES = {
+    "Engine_Size_L": {"min": 0.5,   "max": 8.0,    "label": "ขนาดเครื่องยนต์"},
+    "Mileage_KM":    {"min": 0,     "max": 500000, "label": "ระยะทาง"},
+    "Price_USD":     {"min": 10000, "max": 500000, "label": "ราคา"},
+}
+
 today          = datetime.date.today()
 nm             = (today.replace(day=1) + datetime.timedelta(days=32)).replace(day=1)
 MONTH_TH       = ["ม.ค.","ก.พ.","มี.ค.","เม.ย.","พ.ค.","มิ.ย.",
@@ -379,12 +406,15 @@ with k1:
     """, unsafe_allow_html=True)
 
 with k2:
+    r2_color = "#16a34a" if r2_score >= 0.7 else ("#d97706" if r2_score >= 0.3 else "#dc2626")
+    r2_pct   = max(0, min(100, r2_score * 100))
+    r2_label = "Good" if r2_score >= 0.7 else ("Fair" if r2_score >= 0.3 else "⚠ Retrain Needed")
     st.markdown(f"""
     <div class="kpi-card">
       <div class="kpi-label">Model Accuracy (R²)</div>
-      <div class="kpi-value">{r2_score:.3f}</div>
-      <div class="kpi-progress"><div class="kpi-progress-fill" style="width:{r2_score*100:.0f}%"></div></div>
-      <div class="kpi-sub">MAE = {mae_val:,.0f} units</div>
+      <div class="kpi-value" style="color:{r2_color};">{r2_score:.3f}</div>
+      <div class="kpi-progress"><div class="kpi-progress-fill" style="width:{r2_pct:.0f}%;background:{r2_color};"></div></div>
+      <div class="kpi-sub" style="color:{r2_color};font-weight:600;">{r2_label} · MAE = {mae_val:,.0f}</div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -411,6 +441,22 @@ with k4:
 st.markdown("<br>", unsafe_allow_html=True)
 
 # ══════════════════════════════════════════════════════
+# Validation Helper
+# ══════════════════════════════════════════════════════
+def validate_inputs(engine, mileage, price):
+    """คืน list ของ error messages ถ้า input ไม่ถูกต้อง"""
+    errors = []
+    r = VALIDATION_RULES
+    if not (r["Engine_Size_L"]["min"] <= engine <= r["Engine_Size_L"]["max"]):
+        errors.append(f"ขนาดเครื่องยนต์ต้องอยู่ระหว่าง {r['Engine_Size_L']['min']}–{r['Engine_Size_L']['max']} L")
+    if not (r["Mileage_KM"]["min"] <= mileage <= r["Mileage_KM"]["max"]):
+        errors.append(f"ระยะทางต้องอยู่ระหว่าง {r['Mileage_KM']['min']:,}–{r['Mileage_KM']['max']:,} KM")
+    if not (r["Price_USD"]["min"] <= price <= r["Price_USD"]["max"]):
+        errors.append(f"ราคาต้องอยู่ระหว่าง ${r['Price_USD']['min']:,}–${r['Price_USD']['max']:,}")
+    return errors
+
+
+# ══════════════════════════════════════════════════════
 # Vehicle Specification Panel
 # ══════════════════════════════════════════════════════
 st.markdown('''
@@ -435,7 +481,7 @@ with st.container(border=True):
     with c4:
         trans = st.selectbox("ระบบเกียร์", TRANSMISSIONS)
 
-    ec1, ec2, ec3 = st.columns([2, 2, 1], gap="medium")
+    ec1, ec3 = st.columns([3, 1], gap="medium")
     with ec1:
         eng_cfg = ENGINE_PER_MODEL.get(bmw_model, [1.5, 5.0, 2.0])
         eng_min, eng_max, eng_def = float(eng_cfg[0]), float(eng_cfg[1]), float(eng_cfg[2])
@@ -445,6 +491,10 @@ with st.container(border=True):
                         unsafe_allow_html=True)
         else:
             engine = st.slider("ขนาดเครื่องยนต์ (L)", eng_min, eng_max, eng_def, 0.1, format="%.1f L")
+
+    # ใช้ค่า default คงที่ (median จาก dataset) — ไม่ให้ user ระบุ
+    price_input   = DEFAULT_PRICE
+    mileage_input = DEFAULT_MILEAGE
 
     with ec3:
         st.markdown("<br>", unsafe_allow_html=True)
@@ -466,7 +516,7 @@ with main_col:
                 "Model": bmw_model, "Region": region,
                 "Fuel_Type": fuel,  "Transmission": trans,
                 "Year": 2025, "Engine_Size_L": engine,
-                "Mileage_KM": DEFAULT_MILEAGE, "Price_USD": DEFAULT_PRICE
+                "Mileage_KM": mileage_input, "Price_USD": price_input
             }
             input_vals = ([LE_MAP[c].transform([input_row[c]])[0] for c in FEATURE_CAT]
                           + [input_row[c] for c in FEATURE_NUM])
@@ -724,7 +774,7 @@ with side_col:
         </div>
         <div style="display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:0.5rem;">
           <span style="color:#888;">R² Score</span>
-          <span style="color:#4ade80;font-weight:700;">{r2_score:.4f}</span>
+          <span style="color:{"#4ade80" if r2_score>=0.7 else "#fb923c"};font-weight:700;">{r2_score:.4f}</span>
         </div>
         <div style="display:flex;justify-content:space-between;font-size:0.8rem;margin-bottom:0.5rem;">
           <span style="color:#888;">MAE</span>
@@ -737,6 +787,19 @@ with side_col:
       </div>
     </div>
     """, unsafe_allow_html=True)
+
+# ── Disclaimer ──
+st.markdown("""
+<div class="disclaimer-box">
+  <b>⚠ Disclaimer / ข้อจำกัดความรับผิดชอบ</b><br>
+  ผลการพยากรณ์นี้สร้างขึ้นโดย Machine Learning Model (GradientBoostingRegressor)
+  ที่ train บนข้อมูล BMW Sales ปี 2010–2024 จำนวน 50,000 รายการ
+  ตัวเลขที่แสดงเป็นเพียง <b>การประมาณการเชิงสถิติ</b> เท่านั้น
+  ไม่ใช่การรับประกันยอดขายจริง และไม่ควรใช้เป็นฐานในการตัดสินใจทางธุรกิจโดยไม่มีการวิเคราะห์เพิ่มเติม<br><br>
+  Model accuracy: R² = {r2:.3f} · MAE = ±{mae:.0f} units ·
+  Dataset: Kaggle BMW Sales Data 2010–2024 · สร้างเพื่อวัตถุประสงค์ทางการศึกษาเท่านั้น
+</div>
+""".format(r2=r2_score, mae=mae_val), unsafe_allow_html=True)
 
 # ── Footer ──
 st.markdown("""
