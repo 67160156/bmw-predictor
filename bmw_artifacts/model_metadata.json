@@ -1,0 +1,2032 @@
+{
+  "model_type": "GradientBoostingRegressor",
+  "mae": 747.67,
+  "r2": 0.8783,
+  "training_samples": 40000,
+  "test_samples": 10000,
+  "models": [
+    "1 Series",
+    "2 Series",
+    "3 Series",
+    "4 Series",
+    "5 Series",
+    "6 Series",
+    "7 Series",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "X1",
+    "X2",
+    "X3",
+    "X4",
+    "X5",
+    "X6",
+    "X7",
+    "i3",
+    "i4",
+    "i5",
+    "i7",
+    "i8"
+  ],
+  "regions": [
+    "Africa",
+    "Asia",
+    "Europe",
+    "Middle East",
+    "North America",
+    "South America"
+  ],
+  "fuel_types": [
+    "Diesel",
+    "Electric",
+    "Hybrid",
+    "Petrol"
+  ],
+  "transmissions": [
+    "Automatic",
+    "Manual"
+  ],
+  "features": [
+    "Model_enc",
+    "Year",
+    "Region_enc",
+    "Fuel_enc",
+    "Trans_enc",
+    "Engine_Size_L",
+    "Mileage_KM",
+    "Price_USD"
+  ],
+  "year_range": [
+    2010,
+    2024
+  ],
+  "avg_sales_by_model": {
+    "1 Series": 8604,
+    "2 Series": 3541,
+    "3 Series": 6410,
+    "4 Series": 9151,
+    "5 Series": 6659,
+    "6 Series": 6094,
+    "7 Series": 5839,
+    "M2": 4076,
+    "M3": 8559,
+    "M4": 2939,
+    "M5": 7303,
+    "X1": 5149,
+    "X2": 9204,
+    "X3": 3467,
+    "X4": 1682,
+    "X5": 3194,
+    "X6": 7705,
+    "X7": 3461,
+    "i3": 9295,
+    "i4": 4600,
+    "i5": 3484,
+    "i7": 8304,
+    "i8": 8547
+  },
+  "historical": [
+    {
+      "Model": "1 Series",
+      "Year": 2010,
+      "Sales_Volume": 6771.364341085271
+    },
+    {
+      "Model": "1 Series",
+      "Year": 2011,
+      "Sales_Volume": 7214.8421052631575
+    },
+    {
+      "Model": "1 Series",
+      "Year": 2012,
+      "Sales_Volume": 7333.260606060606
+    },
+    {
+      "Model": "1 Series",
+      "Year": 2013,
+      "Sales_Volume": 7861.108695652174
+    },
+    {
+      "Model": "1 Series",
+      "Year": 2014,
+      "Sales_Volume": 8236.47619047619
+    },
+    {
+      "Model": "1 Series",
+      "Year": 2015,
+      "Sales_Volume": 8368.08088235294
+    },
+    {
+      "Model": "1 Series",
+      "Year": 2016,
+      "Sales_Volume": 8668.728571428572
+    },
+    {
+      "Model": "1 Series",
+      "Year": 2017,
+      "Sales_Volume": 8835.6
+    },
+    {
+      "Model": "1 Series",
+      "Year": 2018,
+      "Sales_Volume": 8992.857142857143
+    },
+    {
+      "Model": "1 Series",
+      "Year": 2019,
+      "Sales_Volume": 9261.943262411347
+    },
+    {
+      "Model": "1 Series",
+      "Year": 2020,
+      "Sales_Volume": 9402.23178807947
+    },
+    {
+      "Model": "1 Series",
+      "Year": 2021,
+      "Sales_Volume": 9502.09022556391
+    },
+    {
+      "Model": "1 Series",
+      "Year": 2022,
+      "Sales_Volume": 9579.877697841726
+    },
+    {
+      "Model": "1 Series",
+      "Year": 2023,
+      "Sales_Volume": 9689.746153846154
+    },
+    {
+      "Model": "1 Series",
+      "Year": 2024,
+      "Sales_Volume": 9776.763636363636
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2010,
+      "Sales_Volume": 2627.0852713178297
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2011,
+      "Sales_Volume": 2730.673758865248
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2012,
+      "Sales_Volume": 2851.492537313433
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2013,
+      "Sales_Volume": 2993.3815789473683
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2014,
+      "Sales_Volume": 3206.5703703703703
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2015,
+      "Sales_Volume": 3273.5766423357663
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2016,
+      "Sales_Volume": 3424.7702702702704
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2017,
+      "Sales_Volume": 3514.021126760563
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2018,
+      "Sales_Volume": 3544.9533333333334
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2019,
+      "Sales_Volume": 3819.993288590604
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2020,
+      "Sales_Volume": 3939.09375
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2021,
+      "Sales_Volume": 4087.588957055215
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2022,
+      "Sales_Volume": 4190.529411764706
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2023,
+      "Sales_Volume": 4299.108108108108
+    },
+    {
+      "Model": "2 Series",
+      "Year": 2024,
+      "Sales_Volume": 4540.700787401574
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2010,
+      "Sales_Volume": 4752.924242424242
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2011,
+      "Sales_Volume": 5091.386861313868
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2012,
+      "Sales_Volume": 5249.562913907284
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2013,
+      "Sales_Volume": 5386.666666666667
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2014,
+      "Sales_Volume": 5714.145569620253
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2015,
+      "Sales_Volume": 5886.166666666667
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2016,
+      "Sales_Volume": 6236.4965034965035
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2017,
+      "Sales_Volume": 6409.081081081081
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2018,
+      "Sales_Volume": 6685.123287671233
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2019,
+      "Sales_Volume": 6963.160305343511
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2020,
+      "Sales_Volume": 7122.056338028169
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2021,
+      "Sales_Volume": 7345.248
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2022,
+      "Sales_Volume": 7691.377622377622
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2023,
+      "Sales_Volume": 7925.602564102564
+    },
+    {
+      "Model": "3 Series",
+      "Year": 2024,
+      "Sales_Volume": 8090.732142857143
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2010,
+      "Sales_Volume": 7531.19708029197
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2011,
+      "Sales_Volume": 7996.8805031446545
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2012,
+      "Sales_Volume": 8214.721088435374
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2013,
+      "Sales_Volume": 8684.12408759124
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2014,
+      "Sales_Volume": 8848.32142857143
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2015,
+      "Sales_Volume": 9072.976878612717
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2016,
+      "Sales_Volume": 9208.231707317073
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2017,
+      "Sales_Volume": 9364.993902439024
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2018,
+      "Sales_Volume": 9539.506666666666
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2019,
+      "Sales_Volume": 9695.561290322581
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2020,
+      "Sales_Volume": 9718.92700729927
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2021,
+      "Sales_Volume": 9762.883211678833
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2022,
+      "Sales_Volume": 9864.007751937985
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2023,
+      "Sales_Volume": 9903.107692307693
+    },
+    {
+      "Model": "4 Series",
+      "Year": 2024,
+      "Sales_Volume": 9959.509803921568
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2010,
+      "Sales_Volume": 4844.328571428571
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2011,
+      "Sales_Volume": 5146.147540983607
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2012,
+      "Sales_Volume": 5489.580882352941
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2013,
+      "Sales_Volume": 5557.248120300752
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2014,
+      "Sales_Volume": 5710.833333333333
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2015,
+      "Sales_Volume": 6152.354430379747
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2016,
+      "Sales_Volume": 6364.416107382551
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2017,
+      "Sales_Volume": 6731.376
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2018,
+      "Sales_Volume": 6831.18
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2019,
+      "Sales_Volume": 7141.231884057971
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2020,
+      "Sales_Volume": 7287.733766233766
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2021,
+      "Sales_Volume": 7760.455223880597
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2022,
+      "Sales_Volume": 7857.732026143791
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2023,
+      "Sales_Volume": 8031.341463414634
+    },
+    {
+      "Model": "5 Series",
+      "Year": 2024,
+      "Sales_Volume": 8125.895705521472
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2010,
+      "Sales_Volume": 4489.4
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2011,
+      "Sales_Volume": 4759.875
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2012,
+      "Sales_Volume": 4866.872483221477
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2013,
+      "Sales_Volume": 5142.4807692307695
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2014,
+      "Sales_Volume": 5496.905063291139
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2015,
+      "Sales_Volume": 5720.778481012659
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2016,
+      "Sales_Volume": 5949.381294964029
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2017,
+      "Sales_Volume": 6450.459459459459
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2018,
+      "Sales_Volume": 6326.6796875
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2019,
+      "Sales_Volume": 6525.235668789809
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2020,
+      "Sales_Volume": 6773.420634920635
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2021,
+      "Sales_Volume": 7050.816666666667
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2022,
+      "Sales_Volume": 7223.163120567376
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2023,
+      "Sales_Volume": 7750.171641791045
+    },
+    {
+      "Model": "6 Series",
+      "Year": 2024,
+      "Sales_Volume": 7561.397260273972
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2010,
+      "Sales_Volume": 4266.2180451127815
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2011,
+      "Sales_Volume": 4439.422818791946
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2012,
+      "Sales_Volume": 4734.415492957746
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2013,
+      "Sales_Volume": 5086.794117647059
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2014,
+      "Sales_Volume": 5149.141104294478
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2015,
+      "Sales_Volume": 5356.693430656935
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2016,
+      "Sales_Volume": 5489.582089552238
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2017,
+      "Sales_Volume": 5827.264516129032
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2018,
+      "Sales_Volume": 6151.347826086957
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2019,
+      "Sales_Volume": 6296.568627450981
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2020,
+      "Sales_Volume": 6600.992592592593
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2021,
+      "Sales_Volume": 6550.419354838709
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2022,
+      "Sales_Volume": 6985.634482758621
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2023,
+      "Sales_Volume": 7137.546666666667
+    },
+    {
+      "Model": "7 Series",
+      "Year": 2024,
+      "Sales_Volume": 7359.211267605634
+    },
+    {
+      "Model": "M2",
+      "Year": 2010,
+      "Sales_Volume": 3041.4244604316546
+    },
+    {
+      "Model": "M2",
+      "Year": 2011,
+      "Sales_Volume": 3110.7933333333335
+    },
+    {
+      "Model": "M2",
+      "Year": 2012,
+      "Sales_Volume": 3349.3892617449665
+    },
+    {
+      "Model": "M2",
+      "Year": 2013,
+      "Sales_Volume": 3491.7380952380954
+    },
+    {
+      "Model": "M2",
+      "Year": 2014,
+      "Sales_Volume": 3592.813953488372
+    },
+    {
+      "Model": "M2",
+      "Year": 2015,
+      "Sales_Volume": 3718.519230769231
+    },
+    {
+      "Model": "M2",
+      "Year": 2016,
+      "Sales_Volume": 3939.6277372262775
+    },
+    {
+      "Model": "M2",
+      "Year": 2017,
+      "Sales_Volume": 4103.033783783784
+    },
+    {
+      "Model": "M2",
+      "Year": 2018,
+      "Sales_Volume": 4214.441860465116
+    },
+    {
+      "Model": "M2",
+      "Year": 2019,
+      "Sales_Volume": 4361.121739130434
+    },
+    {
+      "Model": "M2",
+      "Year": 2020,
+      "Sales_Volume": 4573.384146341464
+    },
+    {
+      "Model": "M2",
+      "Year": 2021,
+      "Sales_Volume": 4743.86301369863
+    },
+    {
+      "Model": "M2",
+      "Year": 2022,
+      "Sales_Volume": 4816.8975903614455
+    },
+    {
+      "Model": "M2",
+      "Year": 2023,
+      "Sales_Volume": 4943.167785234899
+    },
+    {
+      "Model": "M2",
+      "Year": 2024,
+      "Sales_Volume": 5119.885714285714
+    },
+    {
+      "Model": "M3",
+      "Year": 2010,
+      "Sales_Volume": 6678.585526315789
+    },
+    {
+      "Model": "M3",
+      "Year": 2011,
+      "Sales_Volume": 7097.671428571429
+    },
+    {
+      "Model": "M3",
+      "Year": 2012,
+      "Sales_Volume": 7568.735294117647
+    },
+    {
+      "Model": "M3",
+      "Year": 2013,
+      "Sales_Volume": 7808.17877094972
+    },
+    {
+      "Model": "M3",
+      "Year": 2014,
+      "Sales_Volume": 8061.6834532374105
+    },
+    {
+      "Model": "M3",
+      "Year": 2015,
+      "Sales_Volume": 8496.711111111112
+    },
+    {
+      "Model": "M3",
+      "Year": 2016,
+      "Sales_Volume": 8724.340136054421
+    },
+    {
+      "Model": "M3",
+      "Year": 2017,
+      "Sales_Volume": 8690.445205479453
+    },
+    {
+      "Model": "M3",
+      "Year": 2018,
+      "Sales_Volume": 8914.409395973154
+    },
+    {
+      "Model": "M3",
+      "Year": 2019,
+      "Sales_Volume": 9139.774647887323
+    },
+    {
+      "Model": "M3",
+      "Year": 2020,
+      "Sales_Volume": 9234.089743589744
+    },
+    {
+      "Model": "M3",
+      "Year": 2021,
+      "Sales_Volume": 9405.333333333334
+    },
+    {
+      "Model": "M3",
+      "Year": 2022,
+      "Sales_Volume": 9581.977272727272
+    },
+    {
+      "Model": "M3",
+      "Year": 2023,
+      "Sales_Volume": 9588.126984126984
+    },
+    {
+      "Model": "M3",
+      "Year": 2024,
+      "Sales_Volume": 9666.236486486487
+    },
+    {
+      "Model": "M4",
+      "Year": 2010,
+      "Sales_Volume": 2175.583850931677
+    },
+    {
+      "Model": "M4",
+      "Year": 2011,
+      "Sales_Volume": 2330.5072463768115
+    },
+    {
+      "Model": "M4",
+      "Year": 2012,
+      "Sales_Volume": 2372.1666666666665
+    },
+    {
+      "Model": "M4",
+      "Year": 2013,
+      "Sales_Volume": 2474.9024390243903
+    },
+    {
+      "Model": "M4",
+      "Year": 2014,
+      "Sales_Volume": 2600.3125
+    },
+    {
+      "Model": "M4",
+      "Year": 2015,
+      "Sales_Volume": 2808.4895104895104
+    },
+    {
+      "Model": "M4",
+      "Year": 2016,
+      "Sales_Volume": 2803.4140127388537
+    },
+    {
+      "Model": "M4",
+      "Year": 2017,
+      "Sales_Volume": 2940.6339869281046
+    },
+    {
+      "Model": "M4",
+      "Year": 2018,
+      "Sales_Volume": 3029.141935483871
+    },
+    {
+      "Model": "M4",
+      "Year": 2019,
+      "Sales_Volume": 3159.331210191083
+    },
+    {
+      "Model": "M4",
+      "Year": 2020,
+      "Sales_Volume": 3292.5
+    },
+    {
+      "Model": "M4",
+      "Year": 2021,
+      "Sales_Volume": 3377.5496183206105
+    },
+    {
+      "Model": "M4",
+      "Year": 2022,
+      "Sales_Volume": 3492.5524475524476
+    },
+    {
+      "Model": "M4",
+      "Year": 2023,
+      "Sales_Volume": 3581.028776978417
+    },
+    {
+      "Model": "M4",
+      "Year": 2024,
+      "Sales_Volume": 3736.7515151515154
+    },
+    {
+      "Model": "M5",
+      "Year": 2010,
+      "Sales_Volume": 5495.483660130719
+    },
+    {
+      "Model": "M5",
+      "Year": 2011,
+      "Sales_Volume": 5683.0625
+    },
+    {
+      "Model": "M5",
+      "Year": 2012,
+      "Sales_Volume": 6099.680272108843
+    },
+    {
+      "Model": "M5",
+      "Year": 2013,
+      "Sales_Volume": 6083.06993006993
+    },
+    {
+      "Model": "M5",
+      "Year": 2014,
+      "Sales_Volume": 6330.806451612903
+    },
+    {
+      "Model": "M5",
+      "Year": 2015,
+      "Sales_Volume": 6852.6423357664235
+    },
+    {
+      "Model": "M5",
+      "Year": 2016,
+      "Sales_Volume": 7022.135135135135
+    },
+    {
+      "Model": "M5",
+      "Year": 2017,
+      "Sales_Volume": 7370.787878787879
+    },
+    {
+      "Model": "M5",
+      "Year": 2018,
+      "Sales_Volume": 7588.407407407408
+    },
+    {
+      "Model": "M5",
+      "Year": 2019,
+      "Sales_Volume": 7715.342465753424
+    },
+    {
+      "Model": "M5",
+      "Year": 2020,
+      "Sales_Volume": 8088.566265060241
+    },
+    {
+      "Model": "M5",
+      "Year": 2021,
+      "Sales_Volume": 8490.826347305388
+    },
+    {
+      "Model": "M5",
+      "Year": 2022,
+      "Sales_Volume": 8620.208588957055
+    },
+    {
+      "Model": "M5",
+      "Year": 2023,
+      "Sales_Volume": 8607.103448275862
+    },
+    {
+      "Model": "M5",
+      "Year": 2024,
+      "Sales_Volume": 9010.108974358975
+    },
+    {
+      "Model": "X1",
+      "Year": 2010,
+      "Sales_Volume": 3729.6716417910447
+    },
+    {
+      "Model": "X1",
+      "Year": 2011,
+      "Sales_Volume": 3925.446808510638
+    },
+    {
+      "Model": "X1",
+      "Year": 2012,
+      "Sales_Volume": 4154.897637795276
+    },
+    {
+      "Model": "X1",
+      "Year": 2013,
+      "Sales_Volume": 4390.082089552238
+    },
+    {
+      "Model": "X1",
+      "Year": 2014,
+      "Sales_Volume": 4610.3691275167785
+    },
+    {
+      "Model": "X1",
+      "Year": 2015,
+      "Sales_Volume": 4655.554794520548
+    },
+    {
+      "Model": "X1",
+      "Year": 2016,
+      "Sales_Volume": 4923.396103896104
+    },
+    {
+      "Model": "X1",
+      "Year": 2017,
+      "Sales_Volume": 5188.023391812865
+    },
+    {
+      "Model": "X1",
+      "Year": 2018,
+      "Sales_Volume": 5286.580882352941
+    },
+    {
+      "Model": "X1",
+      "Year": 2019,
+      "Sales_Volume": 5443.330882352941
+    },
+    {
+      "Model": "X1",
+      "Year": 2020,
+      "Sales_Volume": 5643.6
+    },
+    {
+      "Model": "X1",
+      "Year": 2021,
+      "Sales_Volume": 5935.0970149253735
+    },
+    {
+      "Model": "X1",
+      "Year": 2022,
+      "Sales_Volume": 6186.228571428572
+    },
+    {
+      "Model": "X1",
+      "Year": 2023,
+      "Sales_Volume": 6399.514925373134
+    },
+    {
+      "Model": "X1",
+      "Year": 2024,
+      "Sales_Volume": 6631.9375
+    },
+    {
+      "Model": "X2",
+      "Year": 2010,
+      "Sales_Volume": 7415.732876712329
+    },
+    {
+      "Model": "X2",
+      "Year": 2011,
+      "Sales_Volume": 8431.505882352942
+    },
+    {
+      "Model": "X2",
+      "Year": 2012,
+      "Sales_Volume": 8247.666666666666
+    },
+    {
+      "Model": "X2",
+      "Year": 2013,
+      "Sales_Volume": 8685.593984962406
+    },
+    {
+      "Model": "X2",
+      "Year": 2014,
+      "Sales_Volume": 8950.937062937062
+    },
+    {
+      "Model": "X2",
+      "Year": 2015,
+      "Sales_Volume": 8931.555555555555
+    },
+    {
+      "Model": "X2",
+      "Year": 2016,
+      "Sales_Volume": 9313.231343283582
+    },
+    {
+      "Model": "X2",
+      "Year": 2017,
+      "Sales_Volume": 9385.603174603175
+    },
+    {
+      "Model": "X2",
+      "Year": 2018,
+      "Sales_Volume": 9585.318181818182
+    },
+    {
+      "Model": "X2",
+      "Year": 2019,
+      "Sales_Volume": 9600.512987012988
+    },
+    {
+      "Model": "X2",
+      "Year": 2020,
+      "Sales_Volume": 9786.739393939393
+    },
+    {
+      "Model": "X2",
+      "Year": 2021,
+      "Sales_Volume": 9817.481751824818
+    },
+    {
+      "Model": "X2",
+      "Year": 2022,
+      "Sales_Volume": 9905.423841059603
+    },
+    {
+      "Model": "X2",
+      "Year": 2023,
+      "Sales_Volume": 9939.927631578947
+    },
+    {
+      "Model": "X2",
+      "Year": 2024,
+      "Sales_Volume": 9984.083333333334
+    },
+    {
+      "Model": "X3",
+      "Year": 2010,
+      "Sales_Volume": 2575.5307692307692
+    },
+    {
+      "Model": "X3",
+      "Year": 2011,
+      "Sales_Volume": 2715.645390070922
+    },
+    {
+      "Model": "X3",
+      "Year": 2012,
+      "Sales_Volume": 2832.5227272727275
+    },
+    {
+      "Model": "X3",
+      "Year": 2013,
+      "Sales_Volume": 2895.5973154362414
+    },
+    {
+      "Model": "X3",
+      "Year": 2014,
+      "Sales_Volume": 3123.8024691358023
+    },
+    {
+      "Model": "X3",
+      "Year": 2015,
+      "Sales_Volume": 3192.7051282051284
+    },
+    {
+      "Model": "X3",
+      "Year": 2016,
+      "Sales_Volume": 3323.448484848485
+    },
+    {
+      "Model": "X3",
+      "Year": 2017,
+      "Sales_Volume": 3508.965034965035
+    },
+    {
+      "Model": "X3",
+      "Year": 2018,
+      "Sales_Volume": 3649.108843537415
+    },
+    {
+      "Model": "X3",
+      "Year": 2019,
+      "Sales_Volume": 3653.4074074074074
+    },
+    {
+      "Model": "X3",
+      "Year": 2020,
+      "Sales_Volume": 3935.9772727272725
+    },
+    {
+      "Model": "X3",
+      "Year": 2021,
+      "Sales_Volume": 4021.4919354838707
+    },
+    {
+      "Model": "X3",
+      "Year": 2022,
+      "Sales_Volume": 4083.273381294964
+    },
+    {
+      "Model": "X3",
+      "Year": 2023,
+      "Sales_Volume": 4232.7106918239
+    },
+    {
+      "Model": "X3",
+      "Year": 2024,
+      "Sales_Volume": 4444.38255033557
+    },
+    {
+      "Model": "X4",
+      "Year": 2010,
+      "Sales_Volume": 1239.4496644295302
+    },
+    {
+      "Model": "X4",
+      "Year": 2011,
+      "Sales_Volume": 1315.0882352941176
+    },
+    {
+      "Model": "X4",
+      "Year": 2012,
+      "Sales_Volume": 1391.2377622377621
+    },
+    {
+      "Model": "X4",
+      "Year": 2013,
+      "Sales_Volume": 1451.2810457516339
+    },
+    {
+      "Model": "X4",
+      "Year": 2014,
+      "Sales_Volume": 1502.75
+    },
+    {
+      "Model": "X4",
+      "Year": 2015,
+      "Sales_Volume": 1526.1136363636363
+    },
+    {
+      "Model": "X4",
+      "Year": 2016,
+      "Sales_Volume": 1693.6433566433566
+    },
+    {
+      "Model": "X4",
+      "Year": 2017,
+      "Sales_Volume": 1685.1376811594203
+    },
+    {
+      "Model": "X4",
+      "Year": 2018,
+      "Sales_Volume": 1779.71974522293
+    },
+    {
+      "Model": "X4",
+      "Year": 2019,
+      "Sales_Volume": 1835.3170731707316
+    },
+    {
+      "Model": "X4",
+      "Year": 2020,
+      "Sales_Volume": 1897.3805970149253
+    },
+    {
+      "Model": "X4",
+      "Year": 2021,
+      "Sales_Volume": 1926.9640287769785
+    },
+    {
+      "Model": "X4",
+      "Year": 2022,
+      "Sales_Volume": 1965.7142857142858
+    },
+    {
+      "Model": "X4",
+      "Year": 2023,
+      "Sales_Volume": 2122.825
+    },
+    {
+      "Model": "X4",
+      "Year": 2024,
+      "Sales_Volume": 2110.135922330097
+    },
+    {
+      "Model": "X5",
+      "Year": 2010,
+      "Sales_Volume": 2349.0119047619046
+    },
+    {
+      "Model": "X5",
+      "Year": 2011,
+      "Sales_Volume": 2497.794520547945
+    },
+    {
+      "Model": "X5",
+      "Year": 2012,
+      "Sales_Volume": 2697.691729323308
+    },
+    {
+      "Model": "X5",
+      "Year": 2013,
+      "Sales_Volume": 2712.421768707483
+    },
+    {
+      "Model": "X5",
+      "Year": 2014,
+      "Sales_Volume": 2841.165605095541
+    },
+    {
+      "Model": "X5",
+      "Year": 2015,
+      "Sales_Volume": 3032.4736842105262
+    },
+    {
+      "Model": "X5",
+      "Year": 2016,
+      "Sales_Volume": 3123.206451612903
+    },
+    {
+      "Model": "X5",
+      "Year": 2017,
+      "Sales_Volume": 3209.7013888888887
+    },
+    {
+      "Model": "X5",
+      "Year": 2018,
+      "Sales_Volume": 3316.383116883117
+    },
+    {
+      "Model": "X5",
+      "Year": 2019,
+      "Sales_Volume": 3368.3805970149256
+    },
+    {
+      "Model": "X5",
+      "Year": 2020,
+      "Sales_Volume": 3606.139705882353
+    },
+    {
+      "Model": "X5",
+      "Year": 2021,
+      "Sales_Volume": 3620.5714285714284
+    },
+    {
+      "Model": "X5",
+      "Year": 2022,
+      "Sales_Volume": 3744.651515151515
+    },
+    {
+      "Model": "X5",
+      "Year": 2023,
+      "Sales_Volume": 3902.219178082192
+    },
+    {
+      "Model": "X5",
+      "Year": 2024,
+      "Sales_Volume": 4113.106382978724
+    },
+    {
+      "Model": "X6",
+      "Year": 2010,
+      "Sales_Volume": 5964.671232876713
+    },
+    {
+      "Model": "X6",
+      "Year": 2011,
+      "Sales_Volume": 6065.753424657534
+    },
+    {
+      "Model": "X6",
+      "Year": 2012,
+      "Sales_Volume": 6340.765822784811
+    },
+    {
+      "Model": "X6",
+      "Year": 2013,
+      "Sales_Volume": 6587.916083916084
+    },
+    {
+      "Model": "X6",
+      "Year": 2014,
+      "Sales_Volume": 7016.012578616353
+    },
+    {
+      "Model": "X6",
+      "Year": 2015,
+      "Sales_Volume": 7267.878205128205
+    },
+    {
+      "Model": "X6",
+      "Year": 2016,
+      "Sales_Volume": 7678.208860759493
+    },
+    {
+      "Model": "X6",
+      "Year": 2017,
+      "Sales_Volume": 7859.202898550725
+    },
+    {
+      "Model": "X6",
+      "Year": 2018,
+      "Sales_Volume": 8103.602649006622
+    },
+    {
+      "Model": "X6",
+      "Year": 2019,
+      "Sales_Volume": 8316.038461538461
+    },
+    {
+      "Model": "X6",
+      "Year": 2020,
+      "Sales_Volume": 8587.45925925926
+    },
+    {
+      "Model": "X6",
+      "Year": 2021,
+      "Sales_Volume": 8755.836734693878
+    },
+    {
+      "Model": "X6",
+      "Year": 2022,
+      "Sales_Volume": 8823.949044585986
+    },
+    {
+      "Model": "X6",
+      "Year": 2023,
+      "Sales_Volume": 9033.465277777777
+    },
+    {
+      "Model": "X6",
+      "Year": 2024,
+      "Sales_Volume": 9244.28947368421
+    },
+    {
+      "Model": "X7",
+      "Year": 2010,
+      "Sales_Volume": 2509.6434108527133
+    },
+    {
+      "Model": "X7",
+      "Year": 2011,
+      "Sales_Volume": 2728.496453900709
+    },
+    {
+      "Model": "X7",
+      "Year": 2012,
+      "Sales_Volume": 2804.625
+    },
+    {
+      "Model": "X7",
+      "Year": 2013,
+      "Sales_Volume": 2928.4714285714285
+    },
+    {
+      "Model": "X7",
+      "Year": 2014,
+      "Sales_Volume": 3136.007633587786
+    },
+    {
+      "Model": "X7",
+      "Year": 2015,
+      "Sales_Volume": 3209.7080745341614
+    },
+    {
+      "Model": "X7",
+      "Year": 2016,
+      "Sales_Volume": 3302.77868852459
+    },
+    {
+      "Model": "X7",
+      "Year": 2017,
+      "Sales_Volume": 3514.0444444444443
+    },
+    {
+      "Model": "X7",
+      "Year": 2018,
+      "Sales_Volume": 3550.255172413793
+    },
+    {
+      "Model": "X7",
+      "Year": 2019,
+      "Sales_Volume": 3650.2340425531916
+    },
+    {
+      "Model": "X7",
+      "Year": 2020,
+      "Sales_Volume": 3865.3543307086616
+    },
+    {
+      "Model": "X7",
+      "Year": 2021,
+      "Sales_Volume": 3975.851612903226
+    },
+    {
+      "Model": "X7",
+      "Year": 2022,
+      "Sales_Volume": 4043.556338028169
+    },
+    {
+      "Model": "X7",
+      "Year": 2023,
+      "Sales_Volume": 4242.91875
+    },
+    {
+      "Model": "X7",
+      "Year": 2024,
+      "Sales_Volume": 4348.785714285715
+    },
+    {
+      "Model": "i3",
+      "Year": 2010,
+      "Sales_Volume": 7864.722222222223
+    },
+    {
+      "Model": "i3",
+      "Year": 2011,
+      "Sales_Volume": 8296.041666666666
+    },
+    {
+      "Model": "i3",
+      "Year": 2012,
+      "Sales_Volume": 8667.122302158274
+    },
+    {
+      "Model": "i3",
+      "Year": 2013,
+      "Sales_Volume": 8817.042857142857
+    },
+    {
+      "Model": "i3",
+      "Year": 2014,
+      "Sales_Volume": 9025.22962962963
+    },
+    {
+      "Model": "i3",
+      "Year": 2015,
+      "Sales_Volume": 9112.598765432098
+    },
+    {
+      "Model": "i3",
+      "Year": 2016,
+      "Sales_Volume": 9262.006535947712
+    },
+    {
+      "Model": "i3",
+      "Year": 2017,
+      "Sales_Volume": 9447.467153284671
+    },
+    {
+      "Model": "i3",
+      "Year": 2018,
+      "Sales_Volume": 9601.863636363636
+    },
+    {
+      "Model": "i3",
+      "Year": 2019,
+      "Sales_Volume": 9680.122580645162
+    },
+    {
+      "Model": "i3",
+      "Year": 2020,
+      "Sales_Volume": 9825.819875776397
+    },
+    {
+      "Model": "i3",
+      "Year": 2021,
+      "Sales_Volume": 9917.943262411347
+    },
+    {
+      "Model": "i3",
+      "Year": 2022,
+      "Sales_Volume": 9887.292682926829
+    },
+    {
+      "Model": "i3",
+      "Year": 2023,
+      "Sales_Volume": 9943.552631578947
+    },
+    {
+      "Model": "i3",
+      "Year": 2024,
+      "Sales_Volume": 9984.572368421053
+    },
+    {
+      "Model": "i4",
+      "Year": 2010,
+      "Sales_Volume": 3364.7291666666665
+    },
+    {
+      "Model": "i4",
+      "Year": 2011,
+      "Sales_Volume": 3472.5375
+    },
+    {
+      "Model": "i4",
+      "Year": 2012,
+      "Sales_Volume": 3723.699346405229
+    },
+    {
+      "Model": "i4",
+      "Year": 2013,
+      "Sales_Volume": 3974.8098591549297
+    },
+    {
+      "Model": "i4",
+      "Year": 2014,
+      "Sales_Volume": 4024.32
+    },
+    {
+      "Model": "i4",
+      "Year": 2015,
+      "Sales_Volume": 4218.216216216216
+    },
+    {
+      "Model": "i4",
+      "Year": 2016,
+      "Sales_Volume": 4524.526315789473
+    },
+    {
+      "Model": "i4",
+      "Year": 2017,
+      "Sales_Volume": 4686.5723684210525
+    },
+    {
+      "Model": "i4",
+      "Year": 2018,
+      "Sales_Volume": 4727.721893491124
+    },
+    {
+      "Model": "i4",
+      "Year": 2019,
+      "Sales_Volume": 4998.006711409396
+    },
+    {
+      "Model": "i4",
+      "Year": 2020,
+      "Sales_Volume": 5135.237410071943
+    },
+    {
+      "Model": "i4",
+      "Year": 2021,
+      "Sales_Volume": 5275.40490797546
+    },
+    {
+      "Model": "i4",
+      "Year": 2022,
+      "Sales_Volume": 5358.680555555556
+    },
+    {
+      "Model": "i4",
+      "Year": 2023,
+      "Sales_Volume": 5762.751515151515
+    },
+    {
+      "Model": "i4",
+      "Year": 2024,
+      "Sales_Volume": 5845.253968253968
+    },
+    {
+      "Model": "i5",
+      "Year": 2010,
+      "Sales_Volume": 2565.6751592356686
+    },
+    {
+      "Model": "i5",
+      "Year": 2011,
+      "Sales_Volume": 2715.8194444444443
+    },
+    {
+      "Model": "i5",
+      "Year": 2012,
+      "Sales_Volume": 2825.708955223881
+    },
+    {
+      "Model": "i5",
+      "Year": 2013,
+      "Sales_Volume": 3015.2909090909093
+    },
+    {
+      "Model": "i5",
+      "Year": 2014,
+      "Sales_Volume": 3159.4324324324325
+    },
+    {
+      "Model": "i5",
+      "Year": 2015,
+      "Sales_Volume": 3309.890410958904
+    },
+    {
+      "Model": "i5",
+      "Year": 2016,
+      "Sales_Volume": 3347.1793103448276
+    },
+    {
+      "Model": "i5",
+      "Year": 2017,
+      "Sales_Volume": 3443.7434210526317
+    },
+    {
+      "Model": "i5",
+      "Year": 2018,
+      "Sales_Volume": 3525.4649681528663
+    },
+    {
+      "Model": "i5",
+      "Year": 2019,
+      "Sales_Volume": 3784.835294117647
+    },
+    {
+      "Model": "i5",
+      "Year": 2020,
+      "Sales_Volume": 3880.1
+    },
+    {
+      "Model": "i5",
+      "Year": 2021,
+      "Sales_Volume": 4030.808
+    },
+    {
+      "Model": "i5",
+      "Year": 2022,
+      "Sales_Volume": 4122.816
+    },
+    {
+      "Model": "i5",
+      "Year": 2023,
+      "Sales_Volume": 4332.775
+    },
+    {
+      "Model": "i5",
+      "Year": 2024,
+      "Sales_Volume": 4384.941605839416
+    },
+    {
+      "Model": "i7",
+      "Year": 2010,
+      "Sales_Volume": 6443.51968503937
+    },
+    {
+      "Model": "i7",
+      "Year": 2011,
+      "Sales_Volume": 6661.625850340136
+    },
+    {
+      "Model": "i7",
+      "Year": 2012,
+      "Sales_Volume": 7195.380952380952
+    },
+    {
+      "Model": "i7",
+      "Year": 2013,
+      "Sales_Volume": 7292.985401459854
+    },
+    {
+      "Model": "i7",
+      "Year": 2014,
+      "Sales_Volume": 7614.824
+    },
+    {
+      "Model": "i7",
+      "Year": 2015,
+      "Sales_Volume": 7999.993288590604
+    },
+    {
+      "Model": "i7",
+      "Year": 2016,
+      "Sales_Volume": 8111.2
+    },
+    {
+      "Model": "i7",
+      "Year": 2017,
+      "Sales_Volume": 8267.148936170213
+    },
+    {
+      "Model": "i7",
+      "Year": 2018,
+      "Sales_Volume": 8667.482993197278
+    },
+    {
+      "Model": "i7",
+      "Year": 2019,
+      "Sales_Volume": 8963.10294117647
+    },
+    {
+      "Model": "i7",
+      "Year": 2020,
+      "Sales_Volume": 8986.311594202898
+    },
+    {
+      "Model": "i7",
+      "Year": 2021,
+      "Sales_Volume": 9219.130434782608
+    },
+    {
+      "Model": "i7",
+      "Year": 2022,
+      "Sales_Volume": 9285.363636363636
+    },
+    {
+      "Model": "i7",
+      "Year": 2023,
+      "Sales_Volume": 9596.034246575342
+    },
+    {
+      "Model": "i7",
+      "Year": 2024,
+      "Sales_Volume": 9578.267080745341
+    },
+    {
+      "Model": "i8",
+      "Year": 2010,
+      "Sales_Volume": 6684.885135135135
+    },
+    {
+      "Model": "i8",
+      "Year": 2011,
+      "Sales_Volume": 7114.7943262411345
+    },
+    {
+      "Model": "i8",
+      "Year": 2012,
+      "Sales_Volume": 7297.790697674419
+    },
+    {
+      "Model": "i8",
+      "Year": 2013,
+      "Sales_Volume": 7607.2307692307695
+    },
+    {
+      "Model": "i8",
+      "Year": 2014,
+      "Sales_Volume": 7987.434210526316
+    },
+    {
+      "Model": "i8",
+      "Year": 2015,
+      "Sales_Volume": 8363.729166666666
+    },
+    {
+      "Model": "i8",
+      "Year": 2016,
+      "Sales_Volume": 8629.423611111111
+    },
+    {
+      "Model": "i8",
+      "Year": 2017,
+      "Sales_Volume": 8770.204545454546
+    },
+    {
+      "Model": "i8",
+      "Year": 2018,
+      "Sales_Volume": 8894.394366197183
+    },
+    {
+      "Model": "i8",
+      "Year": 2019,
+      "Sales_Volume": 9123.056603773584
+    },
+    {
+      "Model": "i8",
+      "Year": 2020,
+      "Sales_Volume": 9188.510638297872
+    },
+    {
+      "Model": "i8",
+      "Year": 2021,
+      "Sales_Volume": 9548.024844720498
+    },
+    {
+      "Model": "i8",
+      "Year": 2022,
+      "Sales_Volume": 9567.297101449276
+    },
+    {
+      "Model": "i8",
+      "Year": 2023,
+      "Sales_Volume": 9557.396694214876
+    },
+    {
+      "Model": "i8",
+      "Year": 2024,
+      "Sales_Volume": 9708.68309859155
+    }
+  ],
+  "fuel_per_model": {
+    "1 Series": [
+      "Diesel",
+      "Petrol"
+    ],
+    "2 Series": [
+      "Diesel",
+      "Petrol",
+      "Hybrid"
+    ],
+    "3 Series": [
+      "Diesel",
+      "Petrol",
+      "Hybrid"
+    ],
+    "4 Series": [
+      "Diesel",
+      "Petrol",
+      "Hybrid"
+    ],
+    "5 Series": [
+      "Diesel",
+      "Petrol",
+      "Hybrid"
+    ],
+    "6 Series": [
+      "Diesel",
+      "Petrol"
+    ],
+    "7 Series": [
+      "Diesel",
+      "Petrol",
+      "Hybrid"
+    ],
+    "X1": [
+      "Diesel",
+      "Petrol",
+      "Electric"
+    ],
+    "X2": [
+      "Diesel",
+      "Petrol",
+      "Electric"
+    ],
+    "X3": [
+      "Diesel",
+      "Petrol",
+      "Hybrid"
+    ],
+    "X4": [
+      "Diesel",
+      "Petrol",
+      "Hybrid"
+    ],
+    "X5": [
+      "Diesel",
+      "Petrol",
+      "Hybrid"
+    ],
+    "X6": [
+      "Diesel",
+      "Petrol",
+      "Hybrid"
+    ],
+    "X7": [
+      "Diesel",
+      "Petrol",
+      "Hybrid"
+    ],
+    "M2": [
+      "Petrol"
+    ],
+    "M3": [
+      "Petrol"
+    ],
+    "M4": [
+      "Petrol"
+    ],
+    "M5": [
+      "Petrol",
+      "Hybrid"
+    ],
+    "i3": [
+      "Electric"
+    ],
+    "i4": [
+      "Electric"
+    ],
+    "i5": [
+      "Electric"
+    ],
+    "i7": [
+      "Electric",
+      "Hybrid"
+    ],
+    "i8": [
+      "Hybrid"
+    ]
+  },
+  "engine_per_model": {
+    "1 Series": [
+      1.5,
+      3.0,
+      2.0
+    ],
+    "2 Series": [
+      1.5,
+      3.0,
+      2.0
+    ],
+    "3 Series": [
+      1.5,
+      3.5,
+      2.0
+    ],
+    "4 Series": [
+      1.5,
+      3.5,
+      2.0
+    ],
+    "5 Series": [
+      2.0,
+      4.5,
+      3.0
+    ],
+    "6 Series": [
+      2.0,
+      4.5,
+      3.0
+    ],
+    "7 Series": [
+      2.0,
+      5.0,
+      3.0
+    ],
+    "X1": [
+      1.5,
+      2.5,
+      2.0
+    ],
+    "X2": [
+      1.5,
+      2.5,
+      2.0
+    ],
+    "X3": [
+      2.0,
+      3.5,
+      2.5
+    ],
+    "X4": [
+      2.0,
+      3.5,
+      2.5
+    ],
+    "X5": [
+      2.5,
+      5.0,
+      3.0
+    ],
+    "X6": [
+      2.5,
+      5.0,
+      3.0
+    ],
+    "X7": [
+      3.0,
+      5.0,
+      3.5
+    ],
+    "M2": [
+      3.0,
+      3.5,
+      3.0
+    ],
+    "M3": [
+      3.0,
+      3.5,
+      3.0
+    ],
+    "M4": [
+      3.0,
+      3.5,
+      3.0
+    ],
+    "M5": [
+      4.0,
+      5.0,
+      4.4
+    ],
+    "i3": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "i4": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "i5": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "i7": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "i8": [
+      1.5,
+      1.5,
+      1.5
+    ]
+  }
+}
